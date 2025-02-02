@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select a Widget</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="addwidget.css">
+    <script defer src="addwidget.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="locationview.html">Recent Locations</a></li>
+            <li><a href="customize.html">Customize Widgets</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Select a Widget to Add</h2>
+
+        <div class="widget-grid">
+
+            <!-- Hourly Forecast Widget -->
+            <button class="widget-box widget-medium" onclick="addWidget('hourly')">
+                <h3>Hourly Forecast</h3>
+                <div class="hourly-container">
+                    <div class="hourly-list scrollable">
+                        <div class="hourly-row">
+                            <img src="images/cloud.png" alt="Cloud">
+                            <span>12PM</span>
+                            <span>30°</span>
+                            <span>5%</span>
+                        </div>
+                        <div class="hourly-row">
+                            <img src="images/cloud.png" alt="Cloud">
+                            <span>1PM</span>
+                            <span>32°</span>
+                            <span>10%</span>
+                        </div>
+                        <div class="hourly-row">
+                            <img src="images/sun.webp" alt="Partly Cloudy">
+                            <span>2PM</span>
+                            <span>34°</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="hourly-row">
+                            <img src="images/sun.webp" alt="Sunny">
+                            <span>3PM</span>
+                            <span>36°</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="hourly-row">
+                            <img src="images/sunset.png" alt="Sunset">
+                            <span>4PM</span>
+                            <span>38°</span>
+                            <span>2%</span>
+                        </div>
+                    </div>
+                </div>
+            </button>
+
+            <!-- 10-Day Weather Widget -->
+            <button class="widget-box widget-medium" onclick="addWidget('ten-day')">
+                <h3>10-Day Weather</h3>
+                <div class="daily-container">
+                    <div class="daily-list scrollable">
+                        <div class="daily-row">
+                            <img src="images/rain.png" alt="Rain">
+                            <span>Mon</span>
+                            <span>23°/31°</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="daily-row">
+                            <img src="images/sun.webp" alt="Partly Cloudy">
+                            <span>Tue</span>
+                            <span>30°/35°</span>
+                            <span>10%</span>
+                        </div>
+                        <div class="daily-row">
+                            <img src="images/sun.webp" alt="Sunny">
+                            <span>Wed</span>
+                            <span>32°/45°</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="daily-row">
+                            <img src="images/cloud.png" alt="Cloudy">
+                            <span>Thu</span>
+                            <span>28°/39°</span>
+                            <span>15%</span>
+                        </div>
+                        <div class="daily-row">
+                            <img src="images/rain.png" alt="Rain">
+                            <span>Fri</span>
+                            <span>25°/33°</span>
+                            <span>60%</span>
+                        </div>
+                    </div>
+                </div>
+            </button>
+
+            <!-- Other Widgets (Turned into Buttons) -->
+            <button class="widget-box widget-small" onclick="addWidget('sunrise')">
+                <h3>Sunrise & Sunset</h3>
+                <p>🌅 Sunrise: 7:00 AM</p>
+                <p>🌇 Sunset: 5:21 PM</p>
+            </button>
+
+            <button class="widget-box widget-small" onclick="addWidget('current-weather')">
+                <h3>Current Weather</h3>
+                <p>63° - Sunny</p>
+                <img src="images/sun.webp" alt="Sunny">
+            </button>
+
+            <button class="widget-box widget-small" onclick="addWidget('wind-speed')">
+                <h3>Wind Speed</h3>
+                <p>10mph</p>
+                <img src="images/wind.png" alt="Wind">
+            </button>
+
+            <button class="widget-box widget-small" onclick="addWidget('uv-index')">
+                <h3>UV Index</h3>
+                <p>2 - Low</p>
+                <img src="images/uv.webp" alt="UV Index">
+            </button>
+
+        </div>
+    </div>
+</body>
+</html>

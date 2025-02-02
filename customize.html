@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="customize.css">
+    <script defer src="customize.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="locationview.html">Recent Locations</a></li>
+            <li><a href="customize.html" class="active">Customize</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Customize Your Dashboard</h2>
+        <p>Click an empty widget to add weather data.</p>
+
+        <div class="widget-container">
+            <div class="widget large empty-slot" data-slot="1" onclick="selectSlot(1)">+</div>
+            <div class="widget small empty-slot" data-slot="2" onclick="selectSlot(2)">+</div>
+            <div class="widget small empty-slot" data-slot="3" onclick="selectSlot(3)">+</div>
+            <div class="widget wide empty-slot" data-slot="4" onclick="selectSlot(4)">+</div>
+        </div>
+    </div>
+</body>
+</html>
